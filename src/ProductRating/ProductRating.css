@@ -1,0 +1,7 @@
+#rating {
+    margin-top: 30px;
+    font-size: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}

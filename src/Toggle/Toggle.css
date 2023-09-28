@@ -1,0 +1,10 @@
+#toggle {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+#toggle button {
+    padding: 10px;
+}
