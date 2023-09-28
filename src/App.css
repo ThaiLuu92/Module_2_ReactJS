@@ -1,0 +1,51 @@
+#home {
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.home-left {
+  flex: 0.7;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+}
+.home-left > * {
+  padding: 10px;
+}
+.card-header .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-header .row .col-6 .search-form{
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-form input {
+  flex: 0.7;
+}
+
+.search-form button {
+  flex: 0.3;
+}
+.template-demo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+
+.home-right {
+  flex: 0.3;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.add-student {
+  margin-top: 10px;
+}
+
