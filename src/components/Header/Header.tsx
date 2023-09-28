@@ -68,12 +68,13 @@ export default class Header extends Component {
                 action="/pages/user/courses/courses.html"
               >
                 <input
+              
                   type="text"
                   name="q"
                   id="inp-search"
                   placeholder="Tìm kiếm"
                 />
-                <FaMagnifyingGlass />
+                < FaMagnifyingGlass className='' />
               </form>
             </div>
           </div>
