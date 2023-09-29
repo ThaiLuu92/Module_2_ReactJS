@@ -5,7 +5,7 @@ interface ListProps {
   items: string[];
 }
 
-export default class List extends Component<ListProps, {}> {
+export default class List extends Component<ListProps> {
   render() {
     const { items } = this.props;
 
