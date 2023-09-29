@@ -1,13 +1,13 @@
 import React from "react";
 import "./Counter.css"
 
-interface Props {}
+
 
 interface State {
   count: number;
 }
 
-export default class Counter extends React.Component<Props, State> {
+export default class Counter extends React.Component<{}, State> {
   state: State = {
     count: 0,
   };
@@ -24,7 +24,7 @@ export default class Counter extends React.Component<Props, State> {
     }));
   };
 
-  render(): React.ReactNode {
+  render() {
     return (
       <div>
         <h1>Tăng giảm</h1>
