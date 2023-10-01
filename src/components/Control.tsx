@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 interface ControlProps {
   onShowForm: () => void;
+  onChange: (value: string) => void; 
+
+
 }
 export default class Control extends Component<ControlProps> {
-
+  handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    this.props.onChange(e.target.value);
+  }
   
   render() {
+    
+    
     return (
       <div className="card-header">
         <div className="row">
@@ -22,8 +29,9 @@ export default class Control extends Component<ControlProps> {
                 className="form-control"
                 placeholder="Search Here"
                 title="Search here"
+                onChange={this.handleChange}
               />
-              <button className="btn btn-primary btn-icon-text">
+              <button className="btn btn-primary btn-icon-text" >
                 Tìm kiếm
               </button>
             </form>
