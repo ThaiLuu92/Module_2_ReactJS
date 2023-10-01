@@ -1,12 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+interface ControlProps {
+  onShowForm: () => void;
+}
+export default class Control extends Component<ControlProps> {
 
-export default class Control extends Component {
+  
   render() {
     return (
       <div className="card-header">
         <div className="row">
           <div className="col-3">
-            <button type="button" className="btn btn-primary btn-icon-text">
+            <button type="button" className="btn btn-primary btn-icon-text" onClick={this.props.onShowForm}>
               Thêm mới sinh viên
             </button>
           </div>

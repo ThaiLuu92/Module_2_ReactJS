@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { students } from './dataStudents';
-
 
 export default class ListStudent extends Component {
   render() {
@@ -21,7 +20,7 @@ export default class ListStudent extends Component {
             </thead>
             <tbody>
               {students.map((student, index) => (
-                <tr>
+                <tr key={index}>
                   <td>{index + 1}</td>
                   <td>{student.studentId}</td>
                   <td>{student.studentName}</td>

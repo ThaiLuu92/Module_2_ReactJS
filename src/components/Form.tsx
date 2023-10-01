@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class Form extends Component {
   render() {
@@ -15,7 +15,7 @@ export default class Form extends Component {
                     type="text"
                     className="form-control"
                     name="idStudent"
-                    // disable
+                  // disable
                   />
                 </div>
               </div>
@@ -63,7 +63,7 @@ export default class Form extends Component {
                 </div>
               </div>
 
-              <button type="submit" className="btn btn-primary me-2">
+              <button type="submit" className="btn btn-primary me-2 add-student">
                 Add new student
               </button>
             </form>
