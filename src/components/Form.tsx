@@ -1,8 +1,9 @@
-import React, { Component, ChangeEvent } from 'react';
-import { students, Student } from './dataStudents';
+import React, { Component, ChangeEvent, FormEvent } from 'react';
+import { students } from './dataStudents';
+import { IStudent } from '../types/type';
 
 interface FormProps {
-  selectedStudent: Student | null;
+  selectedStudent: IStudent | null;
 }
 
 interface FormState {
@@ -39,10 +40,24 @@ export default class Form extends Component<FormProps, FormState> {
       });
     }
   }
+
+  handleOnChange = (event: FormEvent<HTMLInputElement | HTMLSelectElement >) => {
+  this.setState({
+      studentId: this.state.studentId,
+      studentName: this.state.studentName,
+      studentAge: this.state.studentAge,
+      studentGender: this.state.studentGender,
+      studentDateOfBirth: this.state.studentDateOfBirth,
+      studenPlaceOfBirth: this.state.studenPlaceOfBirth,
+      studentAddress: this.state.studentAddress,
+    })
+  }
+
+  handleSubmit = (event: ChangeEvent) => {}
   render() {
 
     const { studentId, studentName, studentAge, studentGender,studentDateOfBirth,studenPlaceOfBirth,studentAddress } = this.state;
-
+    
     return (
       <div className="col-5 grid-margin">
         <div className="card">
@@ -64,7 +79,7 @@ export default class Form extends Component<FormProps, FormState> {
               <div className="form-group row">
                 <label className="col-sm-3 col-form-label">Tên sinh viên</label>
                 <div className="col-sm-9">
-                  <input type="text" className="form-control" name="name" value={studentName} />
+                  <input type="text" className="form-control" name="name" value={studentName} onChange={this.handleOnChange} />
                 </div>
               </div>
               <div className="form-group row">

@@ -3,13 +3,15 @@ import "./App.css";
 import Control from "./components/Control";
 import Form from "./components/Form";
 import ListStudent from "./components/ListStudent";
-import { students, Student } from "./components/dataStudents";
+import { students,  } from "./components/dataStudents";
+import { IStudent } from "./types/type";
+
 
 interface AppProps {}
 
 interface AppState {
   isFormVisible: boolean;
-  selectedStudent: Student | null; // Thêm trạng thái selectedStudent
+  selectedStudent: IStudent | null; 
   keyword: string;
 }
 
@@ -18,18 +20,18 @@ export default class App extends Component<AppProps, AppState> {
     super(props);
     this.state = {
       isFormVisible: false,
-      selectedStudent: null, // Khởi tạo selectedStudent là null
+      selectedStudent: null, 
       keyword: ''
     };
   }
 
-  handleShowForm = () => {
+  handleShowForm = (): void => {
     this.setState((prevState) => ({
-      isFormVisible: !prevState.isFormVisible, // Đảo ngược trạng thái
+      isFormVisible: !prevState.isFormVisible, 
     }));
   };
 
-  handleViewStudent = (student: Student) => {
+  handleViewStudent = (student: IStudent) => {
     this.setState({ 
       selectedStudent: student,
       isFormVisible: true,

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { students, Student } from './dataStudents';
+import { students } from './dataStudents';
+import { IStudent } from '../types/type';
 
 
 interface ListStudentProps {
-  students: Student[]; // Nhận dữ liệu sinh viên từ props
-  onViewStudent: (student: Student) => void; // Nhận sự kiện onViewStudent từ props
+  students: IStudent[]; 
+  onViewStudent: (student: IStudent) => void; // 
   keyword: string;
 }
 export default class ListStudent extends Component<ListStudentProps> {

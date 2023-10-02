@@ -1,14 +1,10 @@
-export interface Student {
-  studentId: string;
-  studentName: string;
-  studentAge: number;
-  studentGender: boolean;
-  studentDateOfBirth: string;
-  studenPlaceOfBirth: string;
-  studentAddress: string;
-}
+import { IStudent } from "../types/type";
 
-export const students: Student[] = [
+
+
+
+
+export const students: IStudent[] = [
   {
     studentId: "SV1",
     studentName: "Nguyễn Văn B",
