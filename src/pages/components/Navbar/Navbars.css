@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+
+.navbar-btn {
+    display: flex;
+    gap: 10px;
+}
+.bg-body-navbar {
+    background-color: #C7E1FF;
+}
+
+.navbar-font h5 {
+    font-weight: 600;
+    margin: 0;
+}
+.navbar-font {
+    padding: 16px 20px;;
+}
+.navbar-font:hover {
+    border-radius: 7px;
+    background-color: #aacffa;
+    padding: 16px 25px;
+}
+
+#navbar-title{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#btn-reg {
+    background-color: #E9493D ;
+    border: 1px solid #E9493D;
+    color: white;
+    font-weight: 700;
+}
+#btn-reg:hover {
+   background-color: #8c170f ;
+   border: 1px solid #8c170f;
+}
+
+#btn-login {
+    background-color: #2D6DB5 ;
+    border: 1px solid #2D6DB5;
+    color: white;
+    font-weight: 700;  
+}
+#btn-login:hover {
+   background-color: #18477d ;
+    border: 1px solid #18477d;
+}
+
