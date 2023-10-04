@@ -1,12 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Counter from './pages/Hook/Counter';
+import OrderForm from './pages/Hook/OrderForm';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>SESSION 13:REACT HOOK
-</h1>
+      <Counter />
+      <OrderForm/>
     </div>
   );
 }
