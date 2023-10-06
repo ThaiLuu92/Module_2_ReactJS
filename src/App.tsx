@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Ex_useState from './Compo/Ex_useState';
-import Ex_useEffect from './Compo/Ex_useEffect';
+import CRUD_ul from './CRUD/CRUD_ul';
+import TodoList from './CRUD/TodoList';
+
+
+
 
 
 function App() {
@@ -12,8 +15,7 @@ function App() {
 
   return (
     <div>
-      <Ex_useState />
-      <Ex_useEffect />
+      <TodoList />
     </div>
   );
 }
