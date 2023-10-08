@@ -1,16 +1,24 @@
 import React from 'react';
-import Navbars from './pages/components/Navbar/Navbars';
-import Login from './pages/auth/Login/Login';
+import Navbars from './Coponents/Navbar/Navbars';
+import {Routes, Route} from'react-router';
+import { routes } from "./routes"
 
 
 
 
 
 function App() {
-  return <div>
-    <div><Navbars /></div>
-    <Login />
-  </div>;
+  return(
+    <>
+    <Navbars />
+      <Routes>
+        {routes.map((route, index) => (
+          <Route key={index} path={route.path} element={route.element} />
+        ))}
+      </Routes>
+    </>
+    
+  )
 }
 
 export default App;
