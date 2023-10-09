@@ -1,25 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Component/Header';
+import Services from './Component/Services';
+import PortfolioGrid from './Component/PortfolioGrid';
+import About from './Component/About';
+import Team from './Component/Team';
+import Clients from './Component/Clients';
+import Contact from './Component/Contact';
+import Footer from './Component/Footer';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Component/Home';
+import { publicRouter } from './routes';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Header />
+      <Routes>
+        {publicRouter.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            element={route.element}
+          />
+        ))}
+        {/* <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/portfolio-grid" element={<PortfolioGrid />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/clients" element={<Clients />} />
+        <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
