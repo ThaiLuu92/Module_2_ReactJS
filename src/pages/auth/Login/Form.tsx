@@ -30,13 +30,13 @@ function FormAuth() {
             <div className="forms">
                 <div className="form register">
                     <span className="title">{action === 'register' ? 'Đăng ký' : 'Đăng nhập'}</span>
-                    <form action="#" id="form-register" onSubmit={(e) => handleSubmit(e, 'register')}>
+                    <form action="#" id="form-register">
                         <div className="input-filed">
                             <input
                                 type="text"
                                 placeholder="Nhập họ tên"
                                 id="input-user"
-                                name="input-user"
+                                name="inputUser"
                                 value={formData.inputUser}
                                 onChange={handleInputChange}
                             />
@@ -48,7 +48,7 @@ function FormAuth() {
                                 type="text"
                                 placeholder="Nhập địa chỉ email"
                                 id="input-email"
-                                name="input-email"
+                                name="inputEmail"
                                 value={formData.inputEmail}
                                 onChange={handleInputChange}
                             />
@@ -61,7 +61,7 @@ function FormAuth() {
                                 type="password"
                                 placeholder="Nhập mật khẩu"
                                 id="input-password"
-                                name="input-password"
+                                name="inputPassword"
                                 value={formData.inputPassword}
                                 onChange={handleInputChange}
                             />
@@ -75,7 +75,7 @@ function FormAuth() {
                                 type="password"
                                 placeholder="Nhập lại mật khẩu"
                                 id="input-repeat-password"
-                                name="input-repeat-password"
+                                name="inputRepeatPassword"
                                 value={formData.inputRepeatPassword}
                                 onChange={handleInputChange}
                             />
