@@ -3,7 +3,8 @@ export interface I_Login {
   password: string;
 }
 
-export interface I_Resgister extends I_Login {
+export interface I_Register extends I_Login {
+  id:string;
   repeatPassword: string;
   userName: string;
 }
