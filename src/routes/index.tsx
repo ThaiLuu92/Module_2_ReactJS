@@ -3,7 +3,7 @@ import Home from "../pages/Home/Home";
 import CourseManagement from "../pages/Admin/CourseManagement/CourseManagement";
 import MentorManagement from "../pages/Admin/MentorManagement/MentorManagement";
 import UserManagement from "../pages/Admin/UserManagement/UserManagement";
-import Form from "../pages/auth/Login/Form";
+import Form from "../pages/auth/LoginAndRegister/Form";
 import { I_Router } from "../types";
 
 
