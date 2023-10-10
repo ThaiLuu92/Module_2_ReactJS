@@ -1,0 +1,1 @@
+export const GET_DATA_USER = process.env.REACT_APP_API
