@@ -1,0 +1,39 @@
+/* Trong tệp CSS của bạn (ví dụ: styles.css) */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+  padding: 6px 10px;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #ff4136;
+}
+
+.update-button {
+  background-color: #2ecc40;
+}
